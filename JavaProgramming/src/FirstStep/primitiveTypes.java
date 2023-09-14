@@ -9,7 +9,7 @@ public class primitiveTypes {
 		//Java's Primitive Types
 
 		int myValue = 10000;
-		
+		System.out.println(myValue);
 		
 		// range of int
 		int myMinIntValue = Integer.MIN_VALUE;

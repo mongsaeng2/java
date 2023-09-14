@@ -20,6 +20,7 @@ public class otherPrimitiveDataTypes {
 		//Long
 		long myLongValue = 100L;
 		
+		System.out.println(myLongValue);
 		System.out.println("A long has a width of " + Long.SIZE);
 		System.out.println("Long value Range(" + Long.MIN_VALUE + " to " + Long.MAX_VALUE + ")");
 			// Long is much bigger than int type
