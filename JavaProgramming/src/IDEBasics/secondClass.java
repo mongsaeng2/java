@@ -1,6 +1,6 @@
 package IDEBasics;
 
-//2023.09.15. #2-2,3,4
+//2023.09.15. #2-2,3,4,5
 
 public class secondClass {
 
@@ -33,10 +33,25 @@ public class secondClass {
 		 * 		}
 		 * */
 		
-		int topScore = 100;
-		if(topScore == 100) {
+		int topScore = 90;
+		if(topScore <= 100) {
 			System.out.println("You got the high score!");
 		}
+		
+		int secondTopScore = 60;
+		if((topScore > secondTopScore) && (topScore < 100)) {
+			System.out.println("Greater than second top score and less than 100");
+		}
+		
+		/* The Logical AND operator and the Logical OR Operator
+		 * 
+		 * The and operator comes in two flavours in Java, as does the or operator.
+		 * && is the Logical and which operates on boolean operands - Checking if a given condition is true or false.
+		 * The & is a bitwise operator working at the bit level.
+		 * 
+		 * Likewise || is the Logical or, and again it operates on boolean operands - Checkking if a given condition is true or false.
+		 * The |        
+		 * */
 		
 	}
 
