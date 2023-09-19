@@ -1,6 +1,6 @@
 package IDEBasics;
 
-//2023.09.15. #2-2,3,4,5
+//2023.09.15. #2-2,3,4,5,6
 
 public class secondClass {
 
@@ -33,12 +33,12 @@ public class secondClass {
 		 * 		}
 		 * */
 		
-		int topScore = 90;
+		int topScore = 80;
 		if(topScore <= 100) {
 			System.out.println("You got the high score!");
 		}
 		
-		int secondTopScore = 60;
+		int secondTopScore = 95;
 		if((topScore > secondTopScore) && (topScore < 100)) {
 			System.out.println("Greater than second top score and less than 100");
 		}
@@ -49,8 +49,42 @@ public class secondClass {
 		 * && is the Logical and which operates on boolean operands - Checking if a given condition is true or false.
 		 * The & is a bitwise operator working at the bit level.
 		 * 
-		 * Likewise || is the Logical or, and again it operates on boolean operands - Checkking if a given condition is true or false.
-		 * The |        
+		 * Likewise || is the Logical or, and again it operates on boolean operands - Checking if a given condition is true or false.
+		 * The | is a bitwise operator, which is also working at the bit level.
+		 * And just like the bitwise and operator, we won't be using it as much as their logical counterparts.
+		 * 
+		 * We'll almost always be using the logical operators.
+		 * */
+		
+		if((topScore > 90) || (secondTopScore <=90)) {
+			System.out.println("Either or both of the conditions are true");
+		}
+		
+		/* Assignment Operator VS Equals to Operator
+		 * */
+		
+		// 1. if(newValue = 50) != if(newValue == 50)
+		int newValue = 50;
+		if(newValue == 50) { 
+			// We're not assigning a value here, instead, we want to test if the values are equal to each other.
+			// We need to put the second equal sign in:
+				// which is now an "equal to" operator, and we're correctly comparing the value of newValue, to the value 50.
+			System.out.println("This is true");
+		}
+		
+		// 2. if(isCar = true) != if(isCar == true)
+		boolean isCar = false;
+		if(!isCar) {
+			// if statement requires a boolean
+			System.out.println("This is not supposed to happen");
+		}
+		
+		/* The NOT Operator
+		 * The exclamation mark(!), or NOT operator, is also known as the Logical Complement Operator.
+		 * 
+		 * generally recommend using the abbreviated form, if your variables are booleans, for two reasons.
+		 * 1. It's much harder to identify the error, if you accidentally use an assignment operator.
+		 * 2. the code is more concise, and more concise code can often be more readable code.
 		 * */
 		
 	}
