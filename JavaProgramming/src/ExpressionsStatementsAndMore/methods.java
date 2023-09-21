@@ -41,23 +41,53 @@ public class methods {
 		
 		int finalScore = score;
 		
-		calculateScore();
+		calculateScore(true, 800, levelCompleted, bonus);
 		
 		score = 10000;
 		levelCompleted = 8;
 		bonus = 200;
 		
 		finalScore = score;
+		
+		if(gameOver) {
+			finalScore += (levelCompleted * bonus);
+			System.out.println("Your final score is " + finalScore);
+		}
 	
 	} // This is the end of main method
 	
 	// Making New Method
 	
-	public static void calculateScore() { // method
+	public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) { // method
 		
-		boolean gameOver = true;
-		int score = 800;
+		int finalScore = score;
+		if(gameOver) {
+			finalScore += (levelCompleted * bonus);
+			finalScore += 1000;
+			System.out.println("Your final score was "+ finalScore);
+		}
 		
+		/* Structure of the Method
+		 * 
+		 * public static void methodName(p1type p1, p2type p2, {more}) {
+		 * 
+		 * 		// Method statements form the method body
+		 * 
+		 * }
+		 * 
+		 * Parameters or Arguments
+		 * 
+		 * Parameters and arguments are terms that are often used interchangeably by developers.
+		 * But technically, a parameter is the definition as shown in the method declaration,
+		 * 	and the argument will be the value that's passed to the method when we call it.
+		 * 
+		 * Executing a Method with parameters
+		 * 
+		 * To execute a method that's defined with parameters,
+		 *  you have to pass variables, values, or expressions that match the type, order and number of the parameters declared.
+		 * In the calculateScore example, we declared the method with four parameters,
+		 *  the first a boolean, and the other three of int data types.
+		 *  */
 	}
 	
 	
