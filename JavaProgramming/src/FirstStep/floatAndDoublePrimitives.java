@@ -25,9 +25,9 @@ public class floatAndDoublePrimitives {
 		double myDoubleValue = 5;
 		
 		myFloatValue = 5f;
-		System.out.println(myFloatValue);
+		System.out.println("myFloatValue : "+myFloatValue);
 		myDoubleValue = 5d;
-		System.out.println(myDoubleValue);
+		System.out.println("myDoubleValue : "+myDoubleValue);
 		
 		// float myOtherFloatValue = 5.25; ▶ 5.25가 double로 자동인식 되기 떄문에 ERROR 발생
 			// float != double ▼ this is the solution
