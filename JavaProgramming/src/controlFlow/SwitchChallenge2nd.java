@@ -8,12 +8,13 @@ public class SwitchChallenge2nd {
 	 * 
 	 * 1. Create a method called printDayOfWeek, that takes an int parameter called day,
 	 * 	but doesn't return any values.
-	 * 	- 0 will return "Sunday", 1 will return "Monday", and so one.
+	 * 	- 0 will return "Sunday", 1 will return "Monday", and so on.
 	 * 		Any number not between 0 and 6, should return "Invalid Day".
 	 *  - returning the result to a String named dayOfTheWeek.
 	 *  - Print both the day variable and the dayOfTheWeek variable
 	 * 2. In the main method, call this method for the values 0 through 7.
-	 * 3. Create a second method called printWeekDay, that uses an if then else statement, instead of a switch, to produce the same output.*/
+	 * 3. Create a second method called printWeekDay, that uses an if then else statement,
+	 * 	 instead of a switch, to produce the same output.*/
 	
 	public static void main(String[] args) {
 		
